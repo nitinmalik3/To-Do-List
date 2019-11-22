@@ -1,0 +1,46 @@
+h1{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: black;
+}
+.m{
+	border: 1px solid #ccc;
+	font-family: Roboto, Helvetica, sans-serif;
+	color: darkslategray;
+	padding: 20px;
+	width: 50%;
+	background: #f3f3f3;
+	margin: auto;
+	border-radius: 20px;
+}
+.inner{
+	border: 1px solid #ccc;
+	width: 50%;
+	background-color:#ffffff;
+	margin: auto;
+	padding: 5px;
+	border-radius: 20px;
+}
+input{
+	border: 1px solid #ccc;
+  	border-radius: 20px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+}
+button{
+	border: 1px solid #ccc;
+  	border-radius: 20px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+}
+button:hover{
+	color: #000000;
+	background: #ffffff;
+}
+.delete{
+	background:#ffffff;
+	color: red;
+}
+.delete:hover{
+	background: tomato;
+	color: #ffffff;
+}
