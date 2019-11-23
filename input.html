@@ -3,16 +3,19 @@
 <head>
 	<title>To-Do App</title>
 	<link rel="stylesheet" type="text/css" href="input.css">
+  
 </head>
 <body>
 	<h1 align="center"><big><big>To-Do List</big></big></h1>
-	<div class="main" align="center">
+	<div class="m" align="center">
 		<h3>Enter your task below</h3>
-		<input type="text" name="input" id='input' placeholder="Enter your task here..." /><br><br>
-		<button id="btn">Add Task</button><br><br>		
-		<div class="inner" align="center">
+		<input type="text" name="input" id='input' placeholder="Enter your task here..." />
+<button id="btn">Add Task</button><br><br><br><br>		
+		<div class="inner" align="center" >
 			<h3>YOUR TASKS</h3>
-			<ul id="list"></ul>
+			<table id="tasks">
+        
+      </table>
 		</div>
 	</div>
 <script type="text/javascript">
@@ -25,19 +28,27 @@
 		}
 		else{
 			input.value = input.value + ' ';
-			var list = document.getElementById('list');
-			var listitem = document.createElement('li');
+			var list = document.getElementById('tasks');
+			var row = document.createElement('TR');
+      var datatext=document.createElement('TD')
+      datatext.setAttribute('class','dtxt')
+      var databtn=document.createElement('TD')
+       databtn.setAttribute('class','dbtn')
 			var deletebutton = document.createElement('button');
 			var deletetext = document.createTextNode('Delete');
 			deletebutton.appendChild(deletetext);
 			deletebutton.setAttribute('class','delete');
-			var text = document.createTextNode(input.value);
-			listitem.appendChild(text);
-			listitem.appendChild(deletebutton);
-			list.appendChild(listitem);
+      var txt=document.createTextNode(input.value)
+			datatext.appendChild(txt)
+			databtn.appendChild(deletebutton);
+			row.appendChild(datatext)
+      row.appendChild(databtn)
+      list.appendChild(row)
+      
 			input.value = '';
 		}
 	}
+  console.log(appendList)
 </script>
 </body>
 </html>

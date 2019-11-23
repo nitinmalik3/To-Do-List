@@ -1,16 +1,20 @@
+body
+{
+	background-color: black;
+}
 h1{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: black;
+	color: white;
 }
 .m{
 	border: 1px solid #ccc;
 	font-family: Roboto, Helvetica, sans-serif;
 	color: darkslategray;
 	padding: 20px;
-	width: 50%;
+	width: 80%;
 	background: #f3f3f3;
 	margin: auto;
-	border-radius: 20px;
+	border-radius: 50px;
 }
 .inner{
 	border: 1px solid #ccc;
@@ -19,12 +23,38 @@ h1{
 	margin: auto;
 	padding: 5px;
 	border-radius: 20px;
+	
+}
+tr,td
+{
+	border: 1px solid #ccc;
+
+}
+td
+{
+	word-wrap: break-word;
+}
+table
+{
+	width: 100%;
+
+
+}
+.dtxt
+{ 
+width: 70%;
+align-items: center;
+}
+.dbtn
+{
+	width: 20%;
 }
 input{
 	border: 1px solid #ccc;
   	border-radius: 20px;
   	padding: 12px 20px;
   	margin: 8px 0;
+ 
 }
 button{
 	border: 1px solid #ccc;
